@@ -1,32 +1,33 @@
-var json='{"name":"john", "age":30,"city":"New York"}';
-var obj=JSON.parse(json);
-console.log(obj);
-var response=[obj];
-console.log(response);
-for(var i=0; i<response.length; i++)
-{
-    console.log(response[i]);
+let myResume={
+    "biodata":
+    {
+        
+        "name":"MEERA J",
+        "email":"connectmeera19@gmail.com",
+        "phone":8489477398,
+        "degree":"M.C.A",
+        "adress":
+            {
+            "no": "168/2, Big Street, Chinnavippedu Village",
+            "pincode":603109,
+            "city":"chennai",
+            "state":"Tamilnadu",
+            "country":"India"
+        }
+    }, 
+        "education":
+            {
+            "degree":"M.C.A",
+            "collegeName": "B.S.Abdur Rehman Crescent Institute of Science and Technology",
+            "department": "Computer Secience",
+            "gpa":7.7
+        },
+    
+    
+        "skils":" basic of java, html, css, javascript",
+        "languages":"Tam,il, English",
+    
+    
 }
-console.log("  ");
-console.log("  ");
-console.log("************for of*****************");
-
-for(var val of response)
-{
-    console.log(val);
-}
-console.log("  ");
-console.log("  ");
-console.log("************for in*****************");
-
-for(var res in response)
-{
-    console.log(val);
-}
-console.log("  ");
-console.log("  ");
-console.log("************forEach*****************");
-
-response.forEach((person)=>{
-    console.log(person);
-})
+console.log(myResume);
+    
